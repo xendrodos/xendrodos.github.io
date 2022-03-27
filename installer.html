@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>qpm</title>
+</head>
+<body>
+<style>
+* {
+background:black;
+font-family:monospace;
+color:white;
+}
+</style>
+<script>
+
+function QdLogData(data) {
+window.tempobj = document.createElement('p');
+window.tempobj.innerHTML = data;
+
+document.body.append(window.tempobj);
+}
+
+QdLogData("System started");
+QdLogData("Running memory benchmark. If os freezed, press restart button.")
+var ar = new Array(0,99999);
+var pea = "data:";
+for (var i = 0; i < ar.length; i++) {
+pea = pea + ar[i]
+
+}
+QdLogData(pea);
+QdLogData("Installing PCVDOSOS<br><center><img src = 'https://fakeupdate.net/mobile/windows/windowsload.gif' style = 'left:0%;'></center>");
+document.cookie="progress=1";
+setTimeout(()=>{
+document.cookie="progress=2";
+QdLogData("Files are copied,installing os..");
+setTimeout(()=>{
+QdLogData("Os installed!");
+document.cookie = "progress=3";
+setTimeout(()=>{
+location.href = "https://xendrodos.github.io";
+},1000);
+},5000);
+},15000);
+
+
+function QdOsInit() {
+document.body.style.background="blue";
+}
+if (document.cookie.includes('progress=3')) {
+location.href = "https://xendrodos.github.io";
+}
+
+</script>
+</body>
+</html>
